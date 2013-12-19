@@ -1,8 +1,14 @@
-// var mongoose = require('mongoose');
-// var Room = mongoose.model('Room');
+var mongoose = require('mongoose');
+var Member = mongoose.model('Member');
 
 var logger   = require('../../libs/Logger');
 
 exports.index = function(req, res) {
-  res.render('index.jade');
+  Member.find({}, function(err, members) {
+    var data = {
+      members: members || []
+    };
+    
+    res.render('pages/index.jade', data);
+  });
 }

@@ -9,8 +9,8 @@ module.exports = function(app, config) {
 
   app.use(express.cookieParser());
 
-    app.use(express.bodyParser({uploadDir: config.root + '/public/tmp/'}));
-    app.use(express.methodOverride());
+  app.use(express.bodyParser({uploadDir: config.root + '/public/tmp/'}));
+  app.use(express.methodOverride());
 
   app.use(express.session({
     secret: 'sns-lukas'

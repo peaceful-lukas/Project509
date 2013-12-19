@@ -1,0 +1,28 @@
+extends ../layouts/mobile
+
+block content
+  include ../popups/profile
+  
+  .search-bar
+    input(type='text')
+    button 찾기
+    
+  ul.member-list
+  - members.forEach(function(member) {
+    li.member-list-cell
+      img(src='#{member.thumbnail}')
+      p #{member.name}
+      p #{member.ageGroup} 또래
+      hr
+  - });
+
+  // css control
+  script.
+    $('.popup').css('display', 'none');
+  
+  // event control
+  script.
+    $('li.member-list-cell').click(function() {
+      // 프로파일 요청한뒤 보여주기.
+      $('.popup').css('display', 'fixed');
+    });
