@@ -1,5 +1,5 @@
 var Utils = {};
 
-Utils.someMethod = function() {
+Utils.SideMenu = function(option) {
   
 };
