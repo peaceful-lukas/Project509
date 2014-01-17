@@ -1,0 +1,22 @@
+extends ../layouts/mobile
+
+block content
+  .profile
+    .thumbnail
+      img(src='#{profile.thumbnail}')
+      p.name #{profile.name}
+    
+    .profile-info
+      .profile-info-col
+        p.ageGroup #{profile.ageGroup} 또래
+        p.birth #{profile.birth}
+      
+      .profile-info-col
+        p.elderGroup #{profile.elderGroup}
+        p.leader #{profile.leader}
+      
+      .profile-info-col
+        p.duty #{profile.duty}
+        p.status #{profile.status}
+    
+    

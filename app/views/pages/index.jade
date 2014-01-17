@@ -1,28 +1,45 @@
 extends ../layouts/mobile
 
 block content
-  //- include ../popups/profile
-  
-  .search-bar
-    input(type='text')
-    button 찾기
-    
-  ul.member-list
-  - members.forEach(function(member) {
-    li.member-list-cell
-      img(src='#{member.thumbnail}')
-      p #{member.name}
-      p #{member.ageGroup} 또래
-      hr
-  - });
 
-  // css control
-  script.
-    $('.popup').css('display', 'none');
+  header
+    .logo
+      img.title(src='/images/commons/title.png')
   
-  // event control
-  script.
-    $('li.member-list-cell').click(function() {
-      // 프로파일 요청한뒤 보여주기.
-      $('.popup').css('display', 'fixed');
-    });
+  
+  .login
+    .login-cell
+      label.email
+      input(type='text', name='email', id='login-email')
+    
+    .login-cell
+      label.password
+      input(type='password', name='password', id='login-password')
+    
+    .login-cell
+      a.login-btn 로그인
+  
+  
+  .join
+    .join-form-switch
+      img.join-icon(src='/images/icons/icon-join.png')
+    
+    .join-form
+      .join-form-cell
+        label 이름
+        input(type='text', name='name', id='join-name')
+        
+      .join-form-cell
+        label 이메일
+        input(type='text', name='email', id='join-email')
+                
+      .join-form-cell
+        label 비밀번호
+        input(type='password', name='password', id='join-password')
+                
+      .join-form-cell
+        label 비밀번호 확인
+        input(type='password', name='passwordVerify', id='join-password-verify')
+      
+      .join-form-submit 
+        a.join-btn 완료

@@ -1,0 +1,14 @@
+
+
+
+
+
+/* low resolution device */
+@media screen and ( max-width:639px ) {
+  
+}
+
+/* iPhone 5, iPhone 5S */
+@media screen and ( min-width:640px ) and ( max-width: 899px ) {
+  
+}

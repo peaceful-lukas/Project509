@@ -1,0 +1,303 @@
+/* HEADER */
+header {
+  width: 100%;
+}
+
+header .logo {
+  width: 50%;
+  margin: 10% auto;
+}
+
+header .logo img.title {
+  width: 100%;
+}
+
+
+/* LOGIN FORM */
+.login {
+  width: 65%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.login .login-cell {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #d4cacb;  
+}
+
+.login .login-cell label {
+  position: absolute;
+  z-index: 1;
+}
+
+.login .login-cell label.email {
+  left: 10px;
+  width: 30px;
+  top: 50%;
+  margin-top: -12px;
+  content: url('../images/icons/icon-email.png');
+}
+
+.login .login-cell label.password {
+  left: 12px;
+  width: 25px;
+  top: 50%;
+  margin-top: -16px;
+  content: url('../images/icons/icon-password.png');
+}
+
+.login .login-cell input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  width: 90%;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  outline-style: none; 
+}
+
+.login a.login-btn {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding-top: 15px;
+  text-align: center;
+  color: #ffffff;
+  background: #71b49f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.join {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.join .join-form-switch {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.join .join-form-switch img.join-icon {
+  position: absolute;
+  right: 0;
+  width: 80px;
+}
+
+.join .join-form {
+  display: none;
+  top: 100px;
+  width: 100%;
+  background: #e5e5e5;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.join .join-form:before {
+  position: absolute;
+  top: -15px;
+  right: 20%;
+  content: url(../images/index/join-form-arrow.png);
+}
+
+.join .join-form .join-form-cell {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.join .join-form .join-form-cell label {
+  position: absolute;
+  top: 17px;
+  left: 30px;
+  width: 110px;
+  opacity: 0.6;
+}
+
+.join .join-form .join-form-cell label:after {
+  position: absolute;
+  right: -10px;
+  content: '>';
+  opacity: 0.6;
+}
+
+.join .join-form .join-form-cell input {
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+  width: 75%;
+  height: 50px;
+  border: 0;
+  background: transparent;
+  font-size: 25px;
+}
+
+.join .join-form .join-form-submit {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.join .join-form a.join-btn {
+  display: block;
+  width: 100%;
+  height: 35px;  
+  padding-top: 15px;
+  text-align: center;
+  color: #ffffff;
+  background: #ef4343;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* low resolution device */
+@media screen and ( max-width:639px ) {
+  .login .login-cell {
+    height: 25px;
+  }
+  
+  .login .login-cell label.email {
+    left: 7px;
+    width: 20px;
+    margin-top: -7px;
+  }
+  
+  .login .login-cell label.password {
+    left: 9px;
+    width: 15px;
+    margin-top: -10px;
+  }
+  
+  .login .login-cell input {
+    width: 80%;
+    height: 25px;
+  }
+  
+  .login a.login-btn {
+    height: 23px;
+    padding-top: 7px;
+    border-radius: 5px;
+  }
+  
+  
+  .join .join-form-switch img.join-icon {
+    position: absolute;
+    right: 0;
+    width: 40px;
+  }
+  
+  .join .join-form {
+    top: 60px;
+    padding-bottom: 20px;
+  }
+  
+  .join .join-form:before {
+    right: 20%;
+  }
+  
+  .join .join-form .join-form-cell {
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .join .join-form .join-form-cell label {
+    top: 7px;
+  }
+  
+  .join .join-form .join-form-cell input {
+    width: 60%;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  
+  .join .join-form a.join-btn {
+    height: 23px;  
+    padding-top: 7px;
+  }
+}
+
+/* iPhone 5, iPhone 5S */
+@media screen and ( min-width:640px ) and ( max-width: 899px ) {
+  .login .login-cell {
+    height: 30px;
+  }
+  
+  .login .login-cell label.email {
+    left: 7px;
+    width: 25px;
+    margin-top: -9px;
+  }
+  
+  .login .login-cell label.password {
+    left: 9px;
+    width: 20px;
+    margin-top: -13px;
+  }
+  
+  .login .login-cell input {
+    width: 85%;
+    height: 30px;
+  }
+  
+  .login a.login-btn {
+    height: 25px;
+    padding-top: 10px;
+    border-radius: 5px;
+  }
+  
+
+  .join .join-form-switch img.join-icon {
+    position: absolute;
+    right: 0;
+    width: 60px;
+  }
+  
+  .join .join-form {
+    top: 80px;
+    padding-bottom: 30px;
+  }
+  
+  .join .join-form:before {
+    right: 21%;
+  }
+  
+  .join .join-form .join-form-cell {
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .join .join-form .join-form-cell label {
+    top: 12px;
+  }
+  
+  .join .join-form .join-form-cell input {
+    width: 65%;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .join .join-form a.join-btn {
+    height: 30px;  
+    padding-top: 10px;
+  }
+}
+
+/* Galaxy S3, Galaxy Note 2, Optimus G */

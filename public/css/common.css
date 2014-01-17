@@ -1,0 +1,15 @@
+
+* {
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/commons/main-bg.png);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}

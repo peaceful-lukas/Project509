@@ -8,7 +8,7 @@
   "dependencies": {
     "express": "latest",
     "jade": "latest",
-    "mongoose": "latest",
+    "sqlite3": "~2.2.0",
     "log4js": "latest"
   }
 }

@@ -1,0 +1,27 @@
+extends ../layouts/mobile
+
+block content
+
+  header
+    .logo
+      img.title(src='/images/commons/title.png')
+  
+  nav
+    ul.icon-group
+      li.mypage: img(src='/images/icons/icon-mypage.png')
+      li.sns: img(src='/images/icons/icon-sns.png')
+      li.notify: img(src='/images/icons/icon-notify.png')
+      li.settings: img(src='/images/icons/icon-settings.png')
+      
+  .search
+    .search-bg
+    label.search
+    input(type='text', name='search', placeholder='친구찾기')
+    
+  ul.user-list
+    - userProfileList.forEach(function(profile) {
+      li.user-list-cell(profile-name='#{profile-name}')
+        img.thumbnail(src='#{profile.thumbnail}')
+        label.name #{profile.name}
+        a.detail
+    - })

@@ -1,0 +1,228 @@
+/* HEADER */
+header {
+  width: 100%;
+}
+
+header .logo {
+  width: 380px;
+  margin: 4% auto;
+}
+
+header .logo img.title {
+  width: 100%;
+}
+
+
+/* NAV */
+nav {
+  width: 280px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+nav ul.icon-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.icon-group li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav ul.icon-group li img {
+  width: 50px;
+}
+
+
+/* SEARCH */
+.search {
+  width: 50%;
+  height: 70px;
+  margin: 0 auto;
+}
+.search .search-bg {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  background: #000000;
+  opacity: 0.3;
+}
+
+.search input {
+  width: 80%;
+  top: 3px;
+  left: 20px;
+  height: 30px;
+  color: #ffffff;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
+.search label.search {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  content: url(../images/icons/icon-search.png);
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+/* USER LIST */
+ul.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #8f8a8a;
+}
+
+ul.user-list li.user-list-cell {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #8f8a8a;
+}
+
+ul.user-list li.user-list-cell img.thumbnail {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+ul.user-list li.user-list-cell label.name {
+  position: absolute;
+  top: 26px;
+  left: 100px;
+  color: #ffffff;
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+ul.user-list li.user-list-cell a.detail {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  content: url(../images/icons/icon-indepth.png);
+}
+
+
+
+
+
+
+/* low resolution device */
+@media screen and ( max-width:639px ) {
+  header .logo {
+    width: 50%;
+    margin: 4% auto;
+  }
+  
+  nav {
+    width: 160px;
+    height: 70px;
+  }
+
+  nav ul.icon-group li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  nav ul.icon-group li img {
+    width: 30px;
+  }
+  
+  .search {
+    height: 40px;
+  }
+  
+  .search .search-bg {
+    height: 20px;
+  }
+
+  .search input {
+    top: -2px;
+    left: 10px;
+    height: 20px;
+  }
+
+  .search label.search {
+    top: 3px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+  }
+
+  ul.user-list li.user-list-cell {
+    height: 50px;
+  }
+
+  ul.user-list li.user-list-cell img.thumbnail {
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  ul.user-list li.user-list-cell label.name {
+    top: 15px;
+    left: 60px;
+    font-size: 15px;
+  }
+
+  ul.user-list li.user-list-cell a.detail {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* iPhone 5, iPhone 5S */
+@media screen and ( min-width:640px ) and ( max-width: 899px ) {
+  nav {
+    width: 250px;
+    height: 85px;
+  }
+
+  nav ul.icon-group li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav ul.icon-group li img {
+    width: 40px;
+  }
+
+  ul.user-list li.user-list-cell {
+    height: 65px;
+  }
+
+  ul.user-list li.user-list-cell img.thumbnail {
+    top: 7px;
+    left: 10px;
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+  }
+
+  ul.user-list li.user-list-cell label.name {
+    top: 23px;
+    left: 80px;
+    font-size: 15px;
+  }
+
+  ul.user-list li.user-list-cell a.detail {
+    top: 18px;
+    right: 10px;
+  }
+}
